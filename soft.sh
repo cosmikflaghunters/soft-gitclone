@@ -1,6 +1,5 @@
 clear
 show_menus() {
-	clear
 	echo "~~~~~~~~~~~~~"	
 	echo " C O S M I K "
 	echo "~~~~~~~~~~~~~"
@@ -14,7 +13,8 @@ read_options(){
 	local choice
 	read -p "Choose between 1 and 4 : " choice
 	case $choice in
-		1) apt update && apt -y full-upgrade 
+		1) apt update && apt -y full-upgrade
+		setxkbmap fr
 		;;
 
 		2) git clone https://github.com/bannsec/stegoVeritas.git
