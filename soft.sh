@@ -1,4 +1,5 @@
 #Usefull ctf tools to clone :
+printf "TEST COSMIK"
 
 git clone https://github.com/bannsec/stegoVeritas.git
 git clone https://github.com/StefanoDeVuono/steghide.git
