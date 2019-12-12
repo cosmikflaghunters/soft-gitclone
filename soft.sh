@@ -34,10 +34,9 @@ read_options(){
 		;;
 
 		4) exit 0;;
-		*) echo -e "${RED}Error...${STD}" && sleep 2
+		*) echo -e "MANGE TES MORTS" && sleep 5
 	esac
 }
-
 	show_menus
 	read_options
 done
