@@ -14,6 +14,7 @@ read_options(){
 	read -p "Choose between 1 and 4 : " choice
 	case $choice in
 		1) apt update && apt -y full-upgrade
+		apt install python3-pip
 		setxkbmap fr
 		;;
 
