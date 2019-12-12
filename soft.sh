@@ -17,6 +17,7 @@ read_options(){
 		apt install python3-pip
 		setxkbmap fr
 		;;
+		read_options()
 
 		2) git clone https://github.com/bannsec/stegoVeritas.git
 		git clone https://github.com/StefanoDeVuono/steghide.git
@@ -26,15 +27,17 @@ read_options(){
 		git clone https://github.com/maurosoria/dirsearch.git
 		git clone https://github.com/ticarpi/jwt_tool.git
 		;;
+		read_options()
 
 		3) pip3 install stegoveritas
 		stegoveritas_install_deps
 		apt-get install steghide -y
 		pip3 install pycryptodomex
 		;;
+		read_options()
 
 		4) exit 0;;
-		*) echo -e "MANGE TES MORTS" && sleep 5
+		*) echo "MANGE TES MORTS !" && sleep 5
 	esac
 }
 	show_menus
